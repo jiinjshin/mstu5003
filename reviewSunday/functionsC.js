@@ -19,3 +19,47 @@ els.forEach(function(btnEl){
 });
 
 document.querySelector('#coolBtn').innerHTML = "VERY COOL BUTTON";
+
+// Get the cat class buttons
+// change the inside to say "Meow"
+var els = document.querySelectorAll('.cat');
+console.log(els);
+
+els.forEach(function(catEl){
+	if (catEl.tagName === "DIV") {
+		catEl.innerHTML = "<a href='http://google.com/?q=cats'>Cats</a>";
+	} else if (catEl.tagName === "BUTTON") {
+		catEl.innerHTML = "MEOW";
+	}
+});
+
+ages = [17, 16, 15, 18];
+ages.forEach(function(age){
+  if (age > 17) {
+		console.log('can vote');
+	} else {
+		console.log('cannot vote');
+	}
+});
+
+
+var inputs = document.querySelectorAll('.question [type="radio"]');
+
+inputs.forEach(function(input){
+  input.addEventListener('click', function(){
+    if (isCorrect(input)) {
+			console.log('correct answer!');
+		} else {
+			console.log('incorrect answer boo!');
+		}
+  });
+});
+
+
+function isCorrect(el) {
+	if (el.classList.contains('correct')) {
+		return true;
+	} else {
+		return false;
+	}
+}
