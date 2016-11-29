@@ -40,6 +40,7 @@ function printAnimals(animalList){
 
 		var template = document.querySelector("#animalTMPL");
 
+// replacing the inner HTML of the template's class "animalCount" with whatever animal quantity is given
 		template.content.querySelector('.animalCount').innerHTML = animal.quantity;
 		template.content.querySelector('.animalName').innerHTML = animal.name;
 

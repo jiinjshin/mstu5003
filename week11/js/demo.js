@@ -61,7 +61,7 @@ piesData.forEach(function(pie) {
 // I want the clicking to set the source
 // The event handler - rather than creating a bunch...
 var pieListEl = document.querySelector('#pie-list');
-
+//listens to the whole list
 		pieListEl.addEventListener('click', function(event) {
 			console.log(event.target); 				// Node that is actually clicked
 			console.log(event.currentTarget); // Node that listener is on
