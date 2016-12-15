@@ -1,3 +1,10 @@
 #fullpage .section {
 	height: 1000px;
 }
+
+.goodQuiz {
+	color: green;
+}
+.badQuiz {
+	color: red;
+}
