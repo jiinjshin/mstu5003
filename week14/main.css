@@ -8,3 +8,21 @@
 .badQuiz {
 	color: red;
 }
+
+a:hover {
+	font-weight: bold;
+	font-size: 20px;
+	color: #ff0018;
+}
+
+p span:hover:not(.findMe) {
+	font-weight: bold;
+	font-size: 20px;
+	color: #ff0018;
+}
+
+.findMe.clicked {
+	font-weight: bold;
+	font-size: 20px;
+	color: #AA0022;
+}

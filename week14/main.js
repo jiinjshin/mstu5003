@@ -41,3 +41,17 @@ document.querySelector('#evalQuiz').addEventListener('click', function(event){
 	}
 
 });
+
+var findMeEls = document.querySelectorAll('.findMe');
+
+findMeEls.forEach(function(el){
+  el.addEventListener('click', function(){
+		findMeEls.forEach(function(el){
+		  el.classList.remove('clicked');
+		});
+		el.classList.add('clicked');
+
+		var myText = el.innerText;
+		console.log(myText);
+	});
+});
